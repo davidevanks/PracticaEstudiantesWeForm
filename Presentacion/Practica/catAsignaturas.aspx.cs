@@ -71,11 +71,7 @@ namespace Presentacion.Practica
                 asig.idPadre = Convert.ToInt32(ddlAsignaturaRequisito.SelectedItem.Value);
                 asig.activo = ckbAvtivo.Checked;
                ban= bl.Guardar(asig);
-                //catPais.fyvCatPaisID = Convert.ToInt32(txtID.Text);
-                //catPais.Descripcion = txtDescripcion.Text;
-                //catPais.Simbolo = txtSimbolo.Text;
-                //catPais.Activo = chkActivo.Checked;
-                //bGuardado = _bl.Guardar(catPais);
+               
 
 
             }
