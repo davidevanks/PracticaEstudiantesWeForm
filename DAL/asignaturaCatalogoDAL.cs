@@ -102,7 +102,7 @@ namespace DAL
                 using (var contexto= new ControlAlumnosEntities())
                 {
 
-                    //iCatPais = (from p in context.fyvCatPais where p.fyvCatPaisID.Equals(pCatPais.fyvCatPaisID) select p.fyvCatPaisID).Count();
+                  
                     idAsig = (from p in contexto.asignaturas where p.idAsignatura.Equals(asig.idAsignatura) select p.idAsignatura).Count();
                     //primer if, se guarda nuevo registro
                     if(idAsig==0)
@@ -120,7 +120,7 @@ namespace DAL
                     else
                     {
                         //para cuando el registro ya existe, y se edita.
-                        //catPais = context.fyvCatPais.Where(p => p.fyvCatPaisID.Equals(pCatPais.fyvCatPaisID)).FirstOrDefault();
+                      
                         asignatura = contexto.asignaturas.Where(p => p.idAsignatura.Equals(asig.idAsignatura)).FirstOrDefault();
 
                         if(asignatura!=null)
